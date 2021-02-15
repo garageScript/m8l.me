@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+  <link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css">
+  <link rel="stylesheet" href="/new.min.css">
+  <link rel="stylesheet" href="/main.css">
+
+  <h1>M8L.me</h1>
+  <p>Pronounced: Mail Me!</p>
+  <p>A new way to take control over your emails! Free and immediately delivery of emails directly to you (or Partner Apps)</p>
+  <p>Unlimited email accounts, unlimited storage, for free, forever</p>
+  <p>You are your own limit!</p>
+  <hr>
+  
+  <h1>Instructions</h1>
+  <h2>Step 1: Domain name</h2>
+  <p>You must have a domain name before you start. What is your domain name?</p>
+  <div>
+    <input class="domainInput" type="text" placeholder="e.g. m8l.me">
+    <button class="domainSubmit">Submit</button>
+  </div>
+  <p>
+It is okay if the output is empty. It means there are no records yet, so just proceed to next step.
+  </p>
+  <div class="domainResult"></div>
+
+  <p> If you do not have a domain name, you can buy one from:</p>
+  <ul>
+    <li>
+      <a href="https://godaddy.com">GoDaddy.com</a>
+    </li>
+    <li>
+      <a href="https://duckduckgo.com/?t=ffab&q=buy+domain+names&atb=v185-1&ia=web">Other sellers</a>
+    </li>
+  </ul>
+  <details>
+    <summary>What do you get with your domain?</summary>
+    <p>If you get a domain, slacker.life for example, you will be able to receive emails on these email domains:</p>
+    <ul>
+      <li>
+        <a href="">receipts@slacker.life</a>
+      </li>
+      <li>
+        <a href="">me@slacker.life</a>
+      </li>
+      <li>
+        <a href="">mom@slacker.life</a>
+      </li>
+      <li>
+        or just anything@slacker.life really. Unlimited email accounts for you, for free, forever.
+      </li>
+    </ul>
+  </details>
+
+  <h2>Step 2: Webhook</h2>
+  <p>When someone sends you an email, where should we deliver the email to?</p>
+  <div class="step2content">
+    <input type="text" class="routeInput" placeholder="e.g. https://hookb.in/OerjdLPLZNfnzzlke3KW" >
+    <button class="routeSubmit">Submit</button>
+    <p>(We will be sending the email as a POST request to the URL)</p>
+  </div>
+
+  <details>
+    <summary>Don't have a server to receive your emails?</summary>
+    <p>
+    If you don't have a website server, you can create a <a href="https://hookbin.com/">hook bin url</a> and just use it immediately.
+    You can use it as a simple email client.
+    </p>
+    <p>Otherwise, you can build your own application and deploy them on your server. Here are a few options:</p>
+    <ul>
+      <li>
+        Deploy your custom application to <a href="https://www.hostwinds.com/8644.html">Hostwinds</a>. 
+        <br>
+        This is an affiliate link. When you signup with Hostwinds I get credit that I can use towards making this free forever
+        <br>
+        I like HostWinds because they don't block port 25 (used for sending and receiving emails)
+      </li>
+      <li>
+        Deploy your custom application to 
+        <a href="https://heroku.com">Heroku</a> or other hosting companies
+      </li>
+    </ul>
+  </details>
+
+  <h2>Step 3: Set MX and TXT Records</h2>
+  <div class="routeResult">
+    <p>
+    Please fill out the information in step 2 to get the MX and TXT records for your domain
+    </p>
+    <p>
+    It make take up 1 - 1000 minutes for the new records to show up. To speed things up, you can try flushing cache 
+    <a href="https://developers.google.com/speed/public-dns/cache">with this tool</a>. 
+    </p>
+  </div>
+
+  <h2>Step 4: REJOICE</h2>
+  <p>Send yourself an email. Your email should be sent to the url you specified
+  in step 2.
+
+  <br>
+  If you don't remember, just repeat the steps again with new url.
+  </p>
+
+  <p>
+  Issues? 
+  <a href="">Let me know.</a>
+  </p>
+
+
+
+
+  <a href="/user-exp.png" target="__blank">
+    <img src="/user-exp.png" alt="user experience for m8l.me" class="thumb">
+  </a>
+
+
+  <script src="/main.js"></script>
+
+</body>
+</html>

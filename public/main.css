@@ -1,0 +1,30 @@
+input {
+  width: 300px;
+  font-size: 1rem;
+}
+
+.label {
+  font-weight: 500;
+  display: inline-block;
+  color: #aaa;
+}
+
+.success .label {
+  color: #0f0;
+}
+.error .label {
+  color: #f00;
+}
+.success .explanation {
+  color: #0f0;
+}
+.error .explanation {
+  color: #f00;
+}
+
+.explanation {
+  display: inline-block;
+  margin-left: 30px;
+  opacity: 0.8;
+  font-size: smaller;
+}
